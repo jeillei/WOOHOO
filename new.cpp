@@ -244,9 +244,9 @@ public:
             triangle triProjected, triTranslated, triRotatedZ, triRotatedZX;
 
             // Rotate in Z-Axis
-			multiplymatvec(tri.p[0], triRotatedZ.p[0], matRotY);
-			multiplymatvec(tri.p[1], triRotatedZ.p[1], matRotY);
-			multiplymatvec(tri.p[2], triRotatedZ.p[2], matRotY);
+			multiplymatvec(tri.p[0], triRotatedZ.p[0], matRotZ);
+			multiplymatvec(tri.p[1], triRotatedZ.p[1], matRotZ);
+			multiplymatvec(tri.p[2], triRotatedZ.p[2], matRotZ);
 
 			// Rotate in X-Axis
 			multiplymatvec(triRotatedZ.p[0], triRotatedZX.p[0], matRotZ);
